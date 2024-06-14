@@ -37,7 +37,7 @@ def draw_text_data(data):
     text_height = 15 * scale
     line_height = 14 * scale
 
-    blf.size(font_id, int(text_height), 72)
+    blf.size(font_id, int(text_height))
     blf.color(font_id, r, g, b, 1.0)
     ypos = y
 
@@ -58,7 +58,7 @@ def draw_graphical_data(data):
     if not lines:
         return
 
-    blf.size(font_id, int(text_height), 72)
+    blf.size(font_id, int(text_height))
 
     def draw_text(color, xpos, ypos, line):
         r, g, b = color

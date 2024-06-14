@@ -110,7 +110,7 @@ def draw_node_time_infos(*data):
         _x, _y = _x, _y + (text_height - 9)
         return _x * location_theta, _y * location_theta
 
-    blf.size(font_id, int(text_height), 72)
+    blf.size(font_id, int(text_height))
     blf.color(font_id, r, g, b, 1.0)
     for idx, node_data in data_tree.items():
         node = node_tree.nodes.get(node_data['name'])
@@ -151,7 +151,7 @@ def draw_overlay(*data):
     text_height = 10
     line_height = 10 + 3
 
-    blf.size(font_id, int(text_height), 72)
+    blf.size(font_id, int(text_height))
     blf.color(font_id, r, g, b, 1.0)
 
     if not node_tree.sv_show_time_graph:
